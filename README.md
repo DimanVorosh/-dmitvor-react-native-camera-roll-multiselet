@@ -35,3 +35,39 @@ Returns: A promise that resolves with an array of MediaData objects representing
 ```typescript
 const selectedMedia = await galleryRef.current.getSelectedMedia();
 ```
+
+## Full Example:
+
+```tsx
+import React, { useRef } from 'react';
+import { GalleryView } from 'react-native-gallery-view';
+
+const App = () => {
+  const galleryRef = useRef(null);
+
+  const handleSelectMedia = (media) => {
+    console.log(media);
+  };
+
+  const handleGetSelectedMedia = async () => {
+    const selectedMedia = await galleryRef.current.getSelectedMedia();
+    console.log(selectedMedia);
+  };
+
+  return (
+    <>
+      <Button title="Get Selected Media" onPress={handleGetSelectedMedia} />
+      <GalleryView
+        ref={galleryRef}
+        style={{ flex: 1 }}
+        onSelectMedia={handleSelectMedia}
+        isMultiSelectEnabled={true}
+        multiSelectStyle={{
+          mainColor: 'blue',
+          subColor: 'green',
+        }}
+      />
+    </>
+  );
+};
+```
