@@ -23,7 +23,7 @@ function App(): React.JSX.Element {
         ref={galleryRef}
         style={styles.gallery}
         onSelectMedia={onSelectPhoto}
-        isMultiSelectEnabled={false}
+        isMultiSelectEnabled={true}
       />
     </SafeAreaView>
   );

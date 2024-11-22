@@ -2,6 +2,8 @@
 
 A customizable gallery view for React Native with multi-select support. Built with Swift for iOS.
 
+![Alt Text](/example.gif)
+
 ## Installation
 
 To install the library, run the following command:

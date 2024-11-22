@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { MediaData } from '../types';
 /**
  * Получить выбранные медиафайлы из GalleryView.
