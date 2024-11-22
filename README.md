@@ -40,7 +40,7 @@ const selectedMedia = await galleryRef.current.getSelectedMedia();
 
 ```tsx
 import React, { useRef } from 'react';
-import { GalleryView } from 'react-native-gallery-view';
+import { GalleryView } from 'react-native-camera-roll-multiselect';
 
 const App = () => {
   const galleryRef = useRef(null);
