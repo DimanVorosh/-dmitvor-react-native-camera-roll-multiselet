@@ -1,5 +1,5 @@
 {
-  "name": "@dmitvor/react-native-camera-roll",
+  "name": "react-native-camera-roll-multiselect",
   "version": "0.0.1",
   "description": "A customizable gallery view for React Native with multi-select support.",
   "main": "index.js",
@@ -13,15 +13,22 @@
     "type": "git",
     "url": "https://github.com/DimanVorosh/react-native-camera-roll-multiselect.git"
   },
-  "keywords": ["react-native", "gallery", "multi-select"],
+  "keywords": [
+    "react-native",
+    "gallery",
+    "multi-select"
+  ],
   "author": "Dmitry Voroshillo",
   "license": "MIT",
   "dependencies": {
     "react": "^17.0.0 || ^18.0.0",
-    "react-native": "^0.64.0 || ^0.70.0"
+    "react-native": " ^0.70.0 || ^0.76.0"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
-    "react-native": "^0.64.0 || ^0.70.0"
+    "react-native": " ^0.70.0 || ^0.76.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12"
   }
 }
