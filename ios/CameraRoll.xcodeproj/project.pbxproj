@@ -15,6 +15,10 @@
 		50C91C5E28BA364FD1E27BFC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 960183EF9D358F2E2DD34A35 /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-CameraRoll-CameraRollTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CameraRoll-CameraRollTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AF072B142CD611760019E4F9 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF072B132CD611760019E4F9 /* GalleryView.swift */; };
+		AF072B162CD611D50019E4F9 /* GalleryViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF072B152CD611D50019E4F9 /* GalleryViewManager.swift */; };
+		AF072B182CD611F70019E4F9 /* GalleryViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF072B172CD611F70019E4F9 /* GalleryViewManager.m */; };
+		AF6497342CD8CE710003B6AC /* GalleryViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6497332CD8CE710003B6AC /* GalleryViewWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +49,12 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-CameraRoll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CameraRoll.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CameraRoll/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-CameraRoll-CameraRollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraRoll-CameraRollTests.release.xcconfig"; path = "Target Support Files/Pods-CameraRoll-CameraRollTests/Pods-CameraRoll-CameraRollTests.release.xcconfig"; sourceTree = "<group>"; };
-		960183EF9D358F2E2DD34A35 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = CameraRoll/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		960183EF9D358F2E2DD34A35 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = CameraRoll/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AF072B132CD611760019E4F9 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		AF072B152CD611D50019E4F9 /* GalleryViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewManager.swift; sourceTree = "<group>"; };
+		AF072B172CD611F70019E4F9 /* GalleryViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryViewManager.m; sourceTree = "<group>"; };
+		AF5443C92CD4D07D0044F486 /* CameraRoll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraRoll-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF6497332CD8CE710003B6AC /* GalleryViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewWrapper.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -89,6 +98,7 @@
 		13B07FAE1A68108700A75B9A /* CameraRoll */ = {
 			isa = PBXGroup;
 			children = (
+				AF072B122CD611620019E4F9 /* GalleryView */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -97,6 +107,7 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				960183EF9D358F2E2DD34A35 /* PrivacyInfo.xcprivacy */,
+				AF5443C92CD4D07D0044F486 /* CameraRoll-Bridging-Header.h */,
 			);
 			name = CameraRoll;
 			sourceTree = "<group>";
@@ -140,6 +151,17 @@
 				00E356EE1AD99517003FC87E /* CameraRollTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AF072B122CD611620019E4F9 /* GalleryView */ = {
+			isa = PBXGroup;
+			children = (
+				AF072B132CD611760019E4F9 /* GalleryView.swift */,
+				AF072B152CD611D50019E4F9 /* GalleryViewManager.swift */,
+				AF072B172CD611F70019E4F9 /* GalleryViewManager.m */,
+				AF6497332CD8CE710003B6AC /* GalleryViewWrapper.swift */,
+			);
+			name = GalleryView;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -211,7 +233,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -398,8 +420,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF072B182CD611F70019E4F9 /* GalleryViewManager.m in Sources */,
+				AF072B162CD611D50019E4F9 /* GalleryViewManager.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				AF072B142CD611760019E4F9 /* GalleryView.swift in Sources */,
+				AF6497342CD8CE710003B6AC /* GalleryViewWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-CameraRoll-CameraRollTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -445,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-CameraRoll-CameraRollTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = CameraRollTests/Info.plist;
@@ -471,7 +499,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JUY4WN3GRP;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CameraRoll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,6 +517,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CameraRoll;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CameraRoll-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -498,7 +531,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JUY4WN3GRP;
 				INFOPLIST_FILE = CameraRoll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -512,6 +548,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CameraRoll;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CameraRoll-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

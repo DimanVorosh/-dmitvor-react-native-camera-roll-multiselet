@@ -22,6 +22,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Доступ к вашим фотографиям необходим для отображения первого изображения из галереи.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Need to library works</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
