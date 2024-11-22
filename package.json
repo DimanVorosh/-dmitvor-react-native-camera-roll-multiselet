@@ -1,6 +1,6 @@
 {
   "name": "react-native-camera-roll-multiselect",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A customizable gallery view for React Native with multi-select support.",
   "main": "index.js",
   "types": "src/index.d.ts",
